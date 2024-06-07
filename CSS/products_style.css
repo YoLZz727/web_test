@@ -1,0 +1,258 @@
+*{ /* resetea los margenes. Por lo general se pone siempre al principio del codigo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    color:orange;
+    background-color:rgb(0, 0, 90); 
+    font-size: 45px; /* cambia el tamaño de la fuente*/
+    font-family: Arial, Helvetica, sans-serif; /* cambia la fuente del texto*/
+    text-align: center; /* alinea el texto*/
+}
+
+main{
+    margin-top: 100px;
+}
+
+.nav_container{
+    background-color: lightblue;
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+
+nav li :hover{ /* (pseudoclases) al pasar el mouse por arriba va a ejecutarse el codigo */
+    background-color: aliceblue;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+}
+
+.nav_class{
+    color: orange;
+    text-align: center;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+}
+
+.main_title{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+ul{
+    color:orange;
+    font-size: 20px;
+}
+
+.card{
+    background-color: lightgrey;
+    width: 300px; /* anchura en px */
+    height: 400px; /* altura en px */
+    border: 3px solid; /* agrega un borde */
+    padding: 5px; /* espaciado entre el borde y el contenido. Se puede poner padding: 10px, 15px, 10px, 30px y se lee en el sentido horario */
+    padding-top: 0px;
+    margin-left: 20px; /* margen desde el lateral de la pagina. Sería como un padding externo */
+    border-radius: 10px; /* redondea las esquinas */
+    text-align: center; /* centro el contenido */
+    margin: 0 auto; /* centra el objeto en pantalla automaticamente */
+    margin-bottom: 5px;
+    margin: 5px;
+}
+
+.card img{
+    width: 60%; /* la imagen no va a ser mas grande que el tamaño del contenedor*/
+    border: 2px solid;
+}
+
+.card h3{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.card p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.card_container{ /* contenedores limite */
+    background-color: lightblue;
+    border: 2px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+}
+
+section{
+    margin: 10px;
+    padding: 3px;
+}
+
+header{
+    position: fixed; /* sirve para posicionar distintos elementos */
+    background-color: lightblue;
+    padding: 40px;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 5px solid ;
+}
+
+.card2{
+    background-color: rgb(255, 120, 120);
+    width: 300px; 
+    height: 200px;
+    border: 3px solid; 
+    padding: 5px; 
+    padding-top: 0px;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.card2 img{
+    width: 60%; 
+    border: 2px solid;
+}
+
+.card2 h3{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.card2 p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.nav_container{
+    background-color: lightblue;
+}
+
+.nav_class{
+    color: orange;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+    display: flex; /* alinea las cards */
+    justify-content: space-between; /* justify-content sirve para organizar las cards (start, end, center, space between, etc) */
+    padding: 5px;
+}
+
+footer{
+    position: relative;
+    background-color: lightblue;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.unavailable_social_media{
+    text-decoration: line-through;
+    color: red;
+    letter-spacing: 2px;
+}
+
+.redes{
+    font-size: 20px;
+    text-align: center;
+}
+
+.redes li{
+    display: inline;
+    list-style: none;
+}
+
+.titulo_redes{
+    bottom: 50px;
+}
+
+.social_media{
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 825px) { /* al estar arriba de los 800px, se ejecuta el css de arriba. Al estar por debajo, se ejecuta el codigo de adentro */
+    .padre{
+        display: block;
+        align-items: center;
+        padding: 5px;
+        margin: auto;
+    }
+
+    main{
+        margin-top: 150px;
+    }
+
+    header{
+        padding: 70px;
+        align-items: center;
+    }
+    
+    .main_title{
+        position: absolute;
+        align-items: center;
+    }
+
+    .nav_container{
+        background-color: lightblue;
+        position: absolute;
+        top: 75px;
+        left: 10px;
+    }
+
+    nav li{
+        list-style: none;
+        display: flex;
+    }
+
+    .card{
+        background-color: lightgrey;
+        width: 300px; /* anchura en px */
+        height: 400px; /* altura en px */
+        border: 3px solid; /* agrega un borde */
+        padding: 5px; /* espaciado entre el borde y el contenido. Se puede poner padding: 10px, 15px, 10px, 30px y se lee en el sentido horario */
+        padding-top: 0px;
+        border-radius: 10px; /* redondea las esquinas */
+        text-align: center; /* centro el contenido */
+        margin: 0 auto; /* centra el objeto en pantalla automaticamente */
+        margin-bottom: 5px;
+    }
+
+    .otros{
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card2{
+        background-color: rgb(255, 120, 120);
+        width: 300px; 
+        height: 200px;
+        border: 3px solid; 
+        padding: 5px; 
+        padding-top: 0px;
+        margin: auto;
+        border-radius: 10px;
+        text-align: center; 
+    }
+
+}

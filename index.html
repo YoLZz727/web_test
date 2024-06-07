@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css"> <!-- adjuntar el archivo css a nuestro codigo de html-->
+    <title>pagina web</title>
+</head>
+<body>
+    <!-- estructura básica de una pagina web -->
+    
+    <!-- header genera el encabezado de la pagina y nav el menu de navegacion-->
+    <header>
+        <div class="main_title">
+            <h1>titulo principal</h1>
+        </div>
+        <div class="nav_container">
+            <nav>
+                <ul class="nav_class">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./Pages/productos.html">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section divide la informacion en secciones (similar a article, pero este sirve mas para texto tipo noticias) - los <div> sirven como contenedores-->
+    <main>
+        <section>
+            <div>
+                <h2 class="titulo_parrafo">Subtitulo</h2>
+                <div class="parrafo">
+                <p class="parrafo_color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel hic ad earum veniam, voluptatum perspiciatis sunt odio dolorem dolorum, corrupti tempore architecto impedit ullam atque quos qui excepturi alias. Aspernatur, consectetur? Quasi et cumque labore. Deleniti illum molestias animi eligendi at sequi numquam tempora aliquid velit ad. Dolorum, ipsa!</p>
+                <p class="parrafo_color_2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut ipsum molestias deserunt unde commodi sunt! Laboriosam nesciunt, debitis quis impedit animi, dicta, eligendi placeat dolor inventore fugiat ratione laudantium adipisci!</p>
+                </div>
+            </div>
+        </section>
+            <!-- class="(clase)" sirve para asignar una clase a un elemento -->
+        <section>
+            <div class="parrafo_2">
+                <h2>Subtitulo 2</h2>
+                <p class="parrafo_color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel hic ad earum veniam, voluptatum perspiciatis sunt odio dolorem dolorum, corrupti tempore architecto impedit ullam atque quos qui excepturi alias. Aspernatur, consectetur? Quasi et cumque labore. Deleniti illum molestias animi eligendi at sequi numquam tempora aliquid velit ad. Dolorum, ipsa!</p>
+            </div>
+        </section>
+        <section>
+            <div class="grid_card">
+                <div class="parent">
+                    <div class="div1"> 
+                        <h2>Nuevo! Whatsapp Car</h2>
+                        <img src="Img/whatsappcar.jpg" alt="whatsappcar">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tempore laudantium facere similique ipsa fugiat quos eligendi nobis accusantium soluta!</p>
+                    </div>
+                    <div class="div2"> 
+                        <h2>Kamisato Ayaka gana las elecciones</h2>
+                        <img src="Img/presidentayaka.png" alt="presidentayaka">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempora nesciunt dolor! Dolor deserunt tenetur, earum harum ad fuga cupiditate!</p>
+                    </div>
+                    <div class="div3">
+                        <h2>The Truth</h2> 
+                        <img src="Img/isletruth.png" alt="isletruth">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo qui repellendus reprehenderit sed ut ullam dolorum, possimus consequatur placeat dolor!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer es el pie de pagina - con <a href=""> podemos poner links hacia otros sitios web. "target="_blank" sirve para abrir en una pestaña aparte -->
+    <footer>
+        <div class="social_media">
+            <h2 id="titulo_redes">Redes sociales</h2>
+            <ul class="redes">
+                <li class="unavailable_social_media">Twitter</li>
+                <li class="unavailable_social_media">Instagram</li>
+                <li class="youtube"><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
